@@ -232,24 +232,6 @@ p {
 
 
 
-@media screen and (max-width: 1440px) {
-    /* .header {
-        max-height: 1300px;
-    } */
-}
-
-@media screen and (max-width: 1424px) {
-    /* .header {
-        max-height: 100%;
-    } */
-}
-
-@media screen and (max-width: 1024px) {
-    /* .header {
-        max-height: 768px;
-    } */
-}
-
 @media screen and (max-width: 870px) {
 
     .column {
@@ -258,16 +240,8 @@ p {
         align-items: center;
     }
 
-    .header__contacts {
-        margin: 90px 0;
-    }
 }
 
-@media screen and (max-width: 812px) and (max-height: 375px) {
-    /* .header {
-        height: 630px;
-    } */
-}
 
 @media screen and (max-width: 450px) {
     .container__appeal_li p {
@@ -286,19 +260,6 @@ p {
         padding: 0 1em;
         margin: 0 1em;
     }
-
-    /* .column3 {
-        display: flex;    
-        flex-direction: column;
-        align-items: center;
-        width: 250px;
-        margin: 2em auto;
-    }
-
-    .column3 div, .column3 p{
-        margin: 0;
-        padding: 0;
-    } */
 
     .container__merit p {
         text-align: right;
@@ -330,9 +291,11 @@ p {
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .flex-row, .flex-grow-1, .f-start {
         width: 320px;
+        margin: auto;
+        padding: auto;
     }
 
     .container__mission, .container__merit {
@@ -340,20 +303,6 @@ p {
         margin: 0;
         padding: 0 1em 0 3em;
 
-    }
-
-    .container__appeal_block {
-        width: 288px;
-        padding: 1em;
-        margin: 2em 0;
-    }
-
-    .container__appeal_ul{
-        width: 320px;
-    }
-
-    .container__appeal_li{
-        width: 100px;
     }
 
     .column3 {
@@ -367,6 +316,24 @@ p {
     .column3 div, .column3 p{
         margin: 0;
         padding: 0;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .container__appeal_block {
+        width: 288px;
+        padding: 1em;
+        margin: 2em 0;
+    }
+
+    .container__appeal_ul{
+        width: 320px;
+    }
+
+    .container__appeal_li{
+        width: 100px;
     }
 
     .num {
