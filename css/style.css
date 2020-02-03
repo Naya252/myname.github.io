@@ -1,268 +1,260 @@
+@charset "UTF-8";
+.const, .wrapper, .column, header, header .nav .nav__list, #main, #main .main, .catalog__cards, .delivery__cards, footer, footer .foo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.constLeft, .desc .desc__name, #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg {
+  width: 915px;
+  height: 30%;
+  margin-left: auto; }
+
+.constP, .desc .desc__name p, #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg p.bg {
+  font-family: "Playfair Display", serif;
+  width: 100%;
+  font-size: 16.6em;
+  letter-spacing: 0.01em;
+  color: #FCF9F7;
+  position: absolute;
+  left: -40px; }
+
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    letter-spacing: 1px;
-}
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px; }
 
-ul,
-li {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0; }
 
-a:active,
-a:focus,
-div:active,
-div:focus {
-    outline: none;
-}
+a {
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent; }
 
-h1,
-h2 {
-    font-size: 1.5em;
+ul, li {
+  display: flex;
+  margin: 0; }
+
+.wrapper {
+  width: 90%;
+  height: 100%;
+  max-width: 1680px;
+  margin: auto; }
+
+.pt {
+  padding-top: 9.38em; }
+
+.pt2 {
+  padding-top: 5.55em; }
+
+.column {
+  flex-direction: column; }
+
+.descriptions, #contacts .contacts .cont {
+  width: 100%;
+  margin-bottom: 2.22em; }
+  .descriptions h2, #contacts .contacts .cont h2 {
+    font-size: 2em;
+    font-family: "Playfair Display", serif;
+    color: #403637;
     font-weight: bold;
-    text-align: center;
-}
+    line-height: 50px; }
+  .descriptions p, #contacts .contacts .cont p {
+    font-size: 18px;
+    color: #403637;
+    line-height: 130%;
+    margin-bottom: .61em;
+    font-weight: 500; }
 
-h1 {
-    margin: 1em;
-    color: white;
-}
+.logo {
+  width: 162px;
+  height: 48px; }
 
-h2 {
-    color: rgb(47, 56, 59);
-}
-
-h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: rgb(47, 56, 59);
-    text-align: left;
-    margin: 0.5em 0;
-
-}
-
-
-.h3 {
-    padding-bottom: 1em;
-    margin-top: 0;
-    padding-top: 0;
-    width: 31%;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.h3:hover {
-    padding-bottom: 1em;
-    width: 100%;
-}
-
-p {
-    font-size: 0.8em;
-    color: rgb(47, 56, 59);
-    text-align: left;
-    line-height: 1.8em;
-}
-
-.button {
-    border-radius: 3em;
-    border: 1px solid white;
-    width: 14em;
-    padding: 1em;
-    margin-top: 0.5em;
-    cursor: pointer;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.btn2 {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.button:hover {
-    box-shadow: 18em 0 0 0 rgba(0, 0, 0, .3) inset;
-}
-
-.button__link {
-    text-decoration: none;
-    color: white;
-}
-
-.flex-column {
+header {
+  height: 80px;
+  background: #E8D4C9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10; }
+  header .nav {
+    max-width: 1083px;
+    height: 100%;
+    margin-left: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    align-content: space-around;
-}
+    border-bottom: 1px solid #987A6E;
+    width: 100%; }
+    header .nav .nav__list {
+      width: 1000px;
+      margin-left: auto;
+      padding: 0; }
+      header .nav .nav__list .nav__item .nav__link {
+        color: #403637; }
+        header .nav .nav__list .nav__item .nav__link::after {
+          display: block;
+          content: "";
+          border-bottom: 1px solid #987A6E;
+          width: 21px;
+          opacity: 0;
+          transition: opacity 1s ease; }
+        header .nav .nav__list .nav__item .nav__link:hover::after {
+          opacity: 1; }
 
-
-.flex-row {
-    display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-    align-content: space-around;
-}
-
-.header {
-    margin: 0 auto;
-    height: 100vh;
-    background: rgb(78, 133, 152);
-}
-
-.header__body,
-.header__body_2 {
-    margin: 1em auto;
-    /* padding: 2em auto; */
-    height: 100vh;
-}
-
-.header__body,
 .container {
-    max-width: 59em;
-    margin: 0 auto;
-}
+  height: 100%; }
 
-.header__logo {
-    margin: auto;
-}
+#main {
+  position: relative; }
+  #main .main {
+    width: 100%;
+    height: 100vh; }
 
-.header__contacts {
-    margin: auto;
-}
+.desc {
+  width: 54%;
+  height: 100%;
+  display: inline-flex;
+  flex-direction: column; }
+  .desc .desc__name {
+    position: relative; }
+    .desc .desc__name p {
+      bottom: -25%; }
+  .desc .desc__description {
+    width: 100%;
+    height: 70%;
+    background: #FCF9F7; }
+    .desc .desc__description .desc__wrap {
+      max-width: 915px;
+      width: 90%;
+      margin-left: auto; }
+    .desc .desc__description .desc__info {
+      margin-left: auto; }
+      .desc .desc__description .desc__info h1 {
+        font-size: 8.5em;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        color: #403637;
+        margin-top: 60px;
+        margin-bottom: 30px; }
+      .desc .desc__description .desc__info .desc__p {
+        margin-bottom: 4.88em; }
+        .desc .desc__description .desc__info .desc__p p {
+          font-size: 1.66em;
+          color: #403637;
+          line-height: 2.33em; }
 
-.header__arrow {
-    margin: auto;
-}
+.pic {
+  width: 46%;
+  height: 100%; }
+  .pic .pic__wrap {
+    max-width: 765px;
+    width: 90%;
+    height: 100%;
+    margin-right: auto;
+    position: relative; }
+  .pic .pic__img {
+    width: 864px;
+    margin-right: auto;
+    height: 775px;
+    position: absolute;
+    top: 8em;
+    right: 0;
+    overflow: hidden;
+    z-index: 6; }
+    .pic .pic__img .pic__img_pict {
+      width: 100%; }
 
-.container__about {
-    width: 59em;
-    margin: 0;
-}
+.btn, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #btnForm, #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form #btnForm, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form #btnForm, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form #btnForm, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form #btnForm, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form #btnForm, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form #btnForm {
+  font-family: "Playfair Display", serif;
+  border: 1px solid #DD7D5C;
+  background: #DD7D5C;
+  color: #FDFBFA;
+  letter-spacing: 0.02em;
+  padding: .94em 2.77em;
+  margin-left: 5px;
+  box-shadow: 5px 5px 0 1px white, 5px 5px 0 2px #DD7D5C, -5px -5px 0 1px white, -5px -5px 0 2px #DD7D5C;
+  transition: box-shadow .5s ease, filter .5s ease; }
+  .btn:hover, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #btnForm:hover, #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form #btnForm:hover, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form #btnForm:hover, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form #btnForm:hover, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form #btnForm:hover, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form #btnForm:hover, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form #btnForm:hover {
+    filter: contrast(150%);
+    box-shadow: 1px 1px 0 1px white, 1px 1px 0 2px #DD7D5C, -1px -1px 0 1px white, -1px -1px 0 2px #DD7D5C; }
+  .btn:active, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #btnForm:active, #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form #btnForm:active, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form #btnForm:active, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form #btnForm:active, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form #btnForm:active, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form #btnForm:active, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form #btnForm:active {
+    filter: contrast(300%);
+    box-shadow: 1px 1px 0 1px white, 1px 1px 0 2px #DD7D5C, -1px -1px 0 1px white, -1px -1px 0 2px #DD7D5C, 0 0 0 2px #DD7D5C inset, 0 0 0 4px white inset; }
 
-.container h2 {
-    margin: 3em 0;
-}
-
-.flex-grow-1 {
-    width: 25em;
-    margin-right: 2em;
-}
-
-.container__h3 {
-    margin-bottom: 2em;
-}
-
-.border {
-    padding-top: 1em;
-    /* width: 4em; */
-    border-bottom: .2em solid rgb(78, 133, 152);
-}
-
-.container__mission p {
-    padding-bottom: 1.1em;
-}
-
-.p__bold {
-    font-weight: bold;
-    color: rgb(78, 133, 152);
-    margin-right: .5em;
-}
-
-.img {
-    width: 3.5em;
-    text-align: center;
-    margin: .5em .5em .5em 0;
-
-}
-
-.padding {
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.padding:hover {
-    padding: .5em 0 .5em 1.2em;
-}
-
-
-
-.f-start {
-    justify-content: flex-start;
-    align-content: space-around;
-}
-
-.container__appeal {
-    width: 58em;
-}
-
-.container__appeal_ul {
-    height: 10em;
-}
-
-.num {
-    border-radius: 50%;
-    border: 1px solid rgb(47, 56, 59);
-    padding: 1em 1.4em;
-    margin-top: 0.5em;
-    color: rgb(47, 56, 59);
-    font-weight: bold;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-
-.num:hover {
-    padding: 2em 2.5em;
-    box-shadow: 0 0 0 2px white, 0 0 0 4px #3A2F28;
-}
-
-
-.dark {
-    border: 1px solid rgb(47, 56, 59);
-    background-color: rgb(47, 56, 59);
-    color: white;
-}
-
-.container__appeal_li p {
-    font-weight: bold;
-    text-align: center;
-    margin: auto;
-}
-
-.container__appeal_block {
-    margin: 2em auto 4em;
-}
-
-.container__appeal_block p {
-    text-align: center;
-    font-size: 1em;
-}
-
-.container__appeal_block .button {
-    border: 1px solid rgb(47, 56, 59);
-    background-color: rgb(47, 56, 59);
-}
-
-.container__appeal_block .button:hover {
-    box-shadow: 0 0 0 .2em rgb(47, 56, 59) inset, 0 0 0 .4em white inset;
-}
-
-/* modal */
-/* свойства модального окна по умолчанию */
-.form-nav {
+.catalog__cards {
+  flex-wrap: wrap;
+  width: 100%;
+  /* modal */
+  /* ╤Б╨▓╨╛╨╣╤Б╤В╨▓╨░ ╨╝╨╛╨┤╨░╨╗╤М╨╜╨╛╨│╨╛ ╨╛╨║╨╜╨░ ╨┐╨╛ ╤Г╨╝╨╛╨╗╤З╨░╨╜╨╕╤О */
+  /* -----  ╨Т╤Л╤А╨░╨▓╨╜╨╕╨▓╨░╨╜╨╕╨╡ ╨┐╨╛ ╤Б╨╡╤А╨╡╨┤╨╕╨╜╨╡  -----*/ }
+  .catalog__cards .catalog__card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 390px;
+    height: 597px;
+    margin-bottom: 2.22em; }
+    .catalog__cards .catalog__card .catalog__card_item {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 330px;
+      height: 459px;
+      padding: 1.66em;
+      background: #FEFEFE;
+      transition: all .5s ease;
+      border: 1px solid rgba(203, 166, 150, 0); }
+      .catalog__cards .catalog__card .catalog__card_item:hover, .catalog__cards .catalog__card .catalog__card_item #catalogClass:hover {
+        border: 1px solid #cba696; }
+      .catalog__cards .catalog__card .catalog__card_item .catalog__card_pic {
+        width: 328px;
+        height: 328px;
+        position: relative;
+        overflow: hidden; }
+        .catalog__cards .catalog__card .catalog__card_item .catalog__card_pic img {
+          position: absolute;
+          top: center;
+          left: center; }
+      .catalog__cards .catalog__card .catalog__card_item .catalog__card_desc {
+        width: 328px;
+        height: 80px;
+        color: #987A6E;
+        line-height: 26px; }
+        .catalog__cards .catalog__card .catalog__card_item .catalog__card_desc h3 {
+          font-size: 1em;
+          font-weight: 500; }
+        .catalog__cards .catalog__card .catalog__card_item .catalog__card_desc p {
+          font-size: .88em; }
+    .catalog__cards .catalog__card .catalog__card_order {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1.66em;
+      height: 48px; }
+      .catalog__cards .catalog__card .catalog__card_order .catalog__card_price {
+        width: 133px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        font-size: 24px;
+        color: #987A6E;
+        font-style: normal; }
+      .catalog__cards .catalog__card .catalog__card_order .catalog__card_btn {
+        width: 180px;
+        height: 100%;
+        border: 1px solid #D79081;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        color: #403637;
+        transition: background-color .5s ease, color .2s ease; }
+        .catalog__cards .catalog__card .catalog__card_order .catalog__card_btn:hover {
+          background-color: #DD7D5C;
+          color: #FDFBFA; }
+  .catalog__cards .catalogMod {
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -273,387 +265,449 @@ p {
     transform: translate(-50%, -50%);
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(64, 54, 55, 0.6);
     opacity: 0;
-    /* элемент невидим для событий мыши */
+    /* ╤Н╨╗╨╡╨╝╨╡╨╜╤В ╨╜╨╡╨▓╨╕╨┤╨╕╨╝ ╨┤╨╗╤П ╤Б╨╛╨▒╤Л╤В╨╕╨╣ ╨╝╤Л╤И╨╕ */
     pointer-events: none;
     margin: 0;
     padding: 0;
-}
-
-.form-nav:target {
-    opacity: 1;
-    /* возвращаем элементу событийность мыши */
-    pointer-events: auto;
-}
-
-/* -----  Выравнивание по середине  -----*/
-.dws-wrapper {
+    z-index: 9999999; }
+    .catalog__cards .catalogMod:target {
+      opacity: 1;
+      /* ╨▓╨╛╨╖╨▓╤А╨░╤Й╨░╨╡╨╝ ╤Н╨╗╨╡╨╝╨╡╨╜╤В╤Г ╤Б╨╛╨▒╤Л╤В╨╕╨╣╨╜╨╛╤Б╤В╤М ╨╝╤Л╤И╨╕ */
+      pointer-events: auto; }
+  .catalog__cards .catalogMod__wrap {
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
-}
-
-.dws-form {
-    background-color: rgba(50, 138, 138, 0.5);
-    padding: .5em;
-    margin: auto;
-    border-radius: 1em;
-}
-
-.dws-form a {
-    text-decoration: none;
-    transition: .5s;
-    color: #298cad;
-}
-
-.dws-form a:hover {
-    color: #36d2ff;
-}
-
-.close {
+    position: absolute;
+    z-index: 9999999999; }
+    .catalog__cards .catalogMod__wrap .catalogMod__container {
+      max-width: 817px;
+      width: 100%;
+      max-height: 544px;
+      width: 45.38em;
+      background-color: #FFFFFF;
+      padding: .5em;
+      margin: auto; }
+      .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems {
+        display: flex;
+        margin-bottom: 2em; }
+        .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem {
+          padding: .5em;
+          width: 50%;
+          max-height: 544px; }
+          .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form {
+            max-width: 255px;
+            margin: auto;
+            /* ╨Я╨╗╨░╨▓╨░╤О╤Й╨╕╨╣ ╤В╨╡╨║╤Б╤В */
+            /* ╨Р╨╜╨╕╨╝╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╤З╨╡╨║╨▒╨╛╨║╤Б */ }
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .inputMod {
+              display: block;
+              width: 100%;
+              font-size: 16px;
+              border: none;
+              border-bottom: 1px solid #987A6E;
+              padding: 12px 14px;
+              box-sizing: border-box;
+              margin-bottom: 22px;
+              color: #403637;
+              outline: none; }
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .box-input {
+              position: relative; }
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .box-input input {
+              border: none;
+              border-bottom: 1px solid #987A6E;
+              padding: 10px 0;
+              background: inherit;
+              max-width: 386px; }
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .box-input input:focus {
+                border-bottom-color: #403637; }
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .box-input label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              padding-top: 10px;
+              color: #987A6E;
+              transition: .5s;
+              pointer-events: none; }
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .box-input input:focus ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .box-input textarea:focus ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .box-input input:valid ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .box-input textarea:valid ~ label {
+              top: -20px;
+              font-size: 12px;
+              color: #CBA696; }
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover {
+              padding-left: .6em;
+              margin-top: 15px;
+              font-size: 10px; }
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover label[for='ckboxMod'],
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover label[for='ckbox2Mod'] {
+                cursor: pointer;
+                padding-left: 1.75em;
+                width: 100%;
+                display: block;
+                position: relative; }
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover label[for='ckboxMod']::before,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover label[for='ckbox2Mod']::before {
+                content: '';
+                position: absolute;
+                border: 1px solid #CBA696;
+                width: 10px;
+                height: 10px;
+                top: -2px;
+                left: 0;
+                transition: .2s; }
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover #ckboxMod:checked + label::before,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover #ckbox2Mod:checked + label::before {
+                border-top: 2px solid transparent;
+                border-left: 2px solid transparent;
+                border-right: 2px solid #987A6E;
+                border-bottom: 2px solid #987A6E;
+                transform: rotate(40deg);
+                width: 6px;
+                height: 11px;
+                transform-origin: 100% 100%;
+                top: -4px;
+                left: -5px; }
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover #ckboxMod:not(:checked),
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover #ckbox2Mod:not(:checked),
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover #ckboxMod:checked,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .recover #ckbox2Mod:checked {
+                display: none; }
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #btnForm {
+              margin-top: 2em;
+              outline: none; }
+  .catalog__cards .close {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-bottom: .5em;
-}
-
-#close {
+    padding-bottom: .5em; }
+  .catalog__cards #close {
     color: #491616;
-    font-size: 24px;
-}
+    font-size: 24px; }
+  .catalog__cards #close:hover {
+    color: #fc0000; }
 
-#close:hover {
-    color: #fc0000;
-}
+.catalog__vector {
+  width: 71px;
+  height: 1.38em;
+  border-bottom: 1px solid #CBA696;
+  padding-bottom: 2px;
+  margin-top: 10px;
+  font-family: "Playfair Display", serif;
+  color: #403637;
+  font-size: 1em;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer; }
+  .catalog__vector .arrow {
+    align-self: center; }
 
-.dws-form ul,
-.dws-form2 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+.delivery__cards {
+  width: 100%; }
+  .delivery__cards .delivery__card {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 340px; }
+    .delivery__cards .delivery__card h3 {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      color: #403637;
+      font-size: 1.11em;
+      line-height: 27px;
+      margin-top: 43px;
+      display: inline-flex;
+      border-bottom: 1px solid #CBA696;
+      padding-bottom: 3px; }
+    .delivery__cards .delivery__card p {
+      font-size: .88em;
+      line-height: 26px;
+      color: #403637;
+      padding-top: 5px; }
+    .delivery__cards .delivery__card .data {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-top: 0;
+      display: flex;
+      align-items: center;
+      height: 1.11em;
+      /* the bubble element, added inside the toggletip live region */ }
+      .delivery__cards .delivery__card .data p {
+        display: inline-flex; }
+      .delivery__cards .delivery__card .data .toggletip-container {
+        position: relative;
+        display: inline-block; }
+      .delivery__cards .delivery__card .data .toggletip-bubble {
+        display: inline-block;
+        position: absolute;
+        right: 0%;
+        top: 100%;
+        width: 200px;
+        padding: 1em;
+        background: #FDFBFA;
+        color: #CBA696;
+        font-size: .7em;
+        line-height: 18px;
+        z-index: 4; }
+      .delivery__cards .delivery__card .data button {
+        width: .5em;
+        padding-right: 7px;
+        padding-left: 5px;
+        height: 1.4em;
+        font-size: .5em;
+        border: 0;
+        background: #E8D4C9;
+        font-weight: 600;
+        color: #CBA696;
+        border: 1px solid #E8D4C9; }
+      .delivery__cards .delivery__card .data button:focus {
+        outline: none;
+        background: #FDFBFA; }
+      .delivery__cards .delivery__card .data .delivery__text_info {
+        padding-left: 1em; }
 
-.tab-form {
-    background-color: #fff;
-    border-radius: .5em;
-    padding: .5em;
-}
+#contacts {
+  overflow: hidden; }
+  #contacts .contacts {
+    display: flex;
+    width: 100%;
+    height: 100%; }
+    #contacts .contacts .cont {
+      margin-bottom: 0;
+      display: flex;
+      width: 100%;
+      height: 100%; }
+      #contacts .contacts .cont .contacts__desc {
+        width: 54%;
+        height: 100%;
+        display: inline-flex;
+        flex-direction: column; }
+        #contacts .contacts .cont .contacts__desc .contacts__desc_wrap {
+          max-width: 915px;
+          width: 90%;
+          margin-left: auto; }
+          #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg {
+            width: 100%;
+            position: relative;
+            max-height: 360px;
+            height: 20em;
+            margin: 0; }
+            #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg p.bg {
+              font-size: 18em;
+              position: absolute;
+              top: 20%;
+              margin: 0; }
+            #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg .contacts__desc_text {
+              max-width: 615px;
+              width: 34em;
+              position: absolute;
+              top: 22%;
+              left: 6.66em;
+              z-index: 3; }
+              #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg .contacts__desc_text .contacts__desc_p {
+                display: flex;
+                justify-content: space-between; }
+                #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg .contacts__desc_text .contacts__desc_p p {
+                  display: inline-flex;
+                  padding-top: 54px; }
+                #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg .contacts__desc_text .contacts__desc_p .contacts__desc_link {
+                  width: 10.5em;
+                  height: 1.38em;
+                  padding-top: 54px;
+                  font-size: 1em;
+                  letter-spacing: 0.02em;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: flex-end; }
+                  #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_bg .contacts__desc_text .contacts__desc_p .contacts__desc_link a {
+                    color: #403637;
+                    padding-bottom: 2px;
+                    border-bottom: 1px solid #CBA696; }
+          #contacts .contacts .cont .contacts__desc .contacts__desc_wrap .contacts__desc_map {
+            width: 100%;
+            height: 200px; }
+      #contacts .contacts .cont .contacts__question {
+        width: 46%;
+        max-height: 560px;
+        height: 100%;
+        background: #FCF9F7;
+        position: relative;
+        z-index: 2; }
+        #contacts .contacts .cont .contacts__question .contacts__question_wrap {
+          max-width: 765px;
+          width: 90%;
+          height: 560px;
+          margin-right: auto; }
+        #contacts .contacts .cont .contacts__question .contacts__question_form, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form {
+          max-width: 460px;
+          width: 34em;
+          padding-top: 4.27em;
+          margin: 0 auto; }
+          #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__question_mainLabel, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__question_mainLabel, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__question_mainLabel {
+            font-size: 2em;
+            font-family: "Playfair Display", serif;
+            color: #403637;
+            font-weight: bold;
+            line-height: 50px; }
+          #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form {
+            padding-left: .6em;
+            margin-top: 2em;
+            /* ╨Я╨╗╨░╨▓╨░╤О╤Й╨╕╨╣ ╤В╨╡╨║╤Б╤В */
+            /* ╨Р╨╜╨╕╨╝╨╕╤А╨╛╨▓╨░╨╜╨╜╤Л╨╣ ╤З╨╡╨║╨▒╨╛╨║╤Б */ }
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .input, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .input, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .input {
+              display: block;
+              width: 100%;
+              font-size: 16px;
+              border: none;
+              border-bottom: 1px solid #987A6E;
+              padding: 12px 14px;
+              box-sizing: border-box;
+              margin-bottom: 22px;
+              color: #403637;
+              outline: none; }
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form textarea, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form textarea, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form textarea, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form textarea, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form textarea, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form textarea {
+              overflow: auto; }
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input {
+              position: relative; }
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input input, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input input, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input input, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input input, #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input textarea, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input textarea, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input textarea, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input textarea, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input textarea, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input textarea {
+              border: none;
+              border-bottom: 1px solid #987A6E;
+              padding: 10px 0;
+              background: inherit;
+              max-width: 386px; }
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input input:focus, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input input:focus, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input input:focus, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input input:focus, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input input:focus, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input input:focus, #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input textarea:focus, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input textarea:focus, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input textarea:focus, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input textarea:focus, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input textarea:focus, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input textarea:focus {
+                border-bottom-color: #403637; }
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input label, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input label, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input label, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input label, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input label, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input label {
+              position: absolute;
+              top: 0;
+              left: 0;
+              padding-top: 10px;
+              color: #987A6E;
+              transition: .5s;
+              pointer-events: none; }
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input input:focus ~ label, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input input:focus ~ label, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input input:focus ~ label, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input input:focus ~ label, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input input:focus ~ label, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input input:focus ~ label,
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input textarea:focus ~ label,
+            #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input textarea:focus ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input textarea:focus ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input textarea:focus ~ label,
+            #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input textarea:focus ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input textarea:focus ~ label,
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input input:valid ~ label,
+            #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input input:valid ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input input:valid ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input input:valid ~ label,
+            #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input input:valid ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input input:valid ~ label,
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .box-input textarea:valid ~ label,
+            #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .box-input textarea:valid ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .box-input textarea:valid ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .box-input textarea:valid ~ label,
+            #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .box-input textarea:valid ~ label,
+            .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .box-input textarea:valid ~ label {
+              top: -20px;
+              font-size: 12px;
+              color: #CBA696; }
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover {
+              padding-left: .6em;
+              margin-top: 15px;
+              font-size: 10px; }
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover label[for='ckbox'], #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover label[for='ckbox'], .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover label[for='ckbox'], .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover label[for='ckbox'], #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover label[for='ckbox'], .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover label[for='ckbox'],
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover label[for='ckbox2'],
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover label[for='ckbox2'],
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover label[for='ckbox2'],
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover label[for='ckbox2'],
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover label[for='ckbox2'],
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover label[for='ckbox2'] {
+                cursor: pointer;
+                padding-left: 1.75em;
+                width: 100%;
+                display: block;
+                position: relative; }
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover label[for='ckbox']::before, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover label[for='ckbox']::before, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover label[for='ckbox']::before, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover label[for='ckbox']::before, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover label[for='ckbox']::before, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover label[for='ckbox']::before,
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover label[for='ckbox2']::before,
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover label[for='ckbox2']::before,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover label[for='ckbox2']::before,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover label[for='ckbox2']::before,
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover label[for='ckbox2']::before,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover label[for='ckbox2']::before {
+                content: '';
+                position: absolute;
+                border: 1px solid #CBA696;
+                width: 10px;
+                height: 10px;
+                top: -2px;
+                left: 0;
+                transition: .2s; }
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover #ckbox:checked + label::before, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover #ckbox:checked + label::before, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover #ckbox:checked + label::before, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover #ckbox:checked + label::before, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover #ckbox:checked + label::before, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover #ckbox:checked + label::before,
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover #ckbox2:checked + label::before,
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover #ckbox2:checked + label::before,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover #ckbox2:checked + label::before,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover #ckbox2:checked + label::before,
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover #ckbox2:checked + label::before,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover #ckbox2:checked + label::before {
+                border-top: 2px solid transparent;
+                border-left: 2px solid transparent;
+                border-right: 2px solid #987A6E;
+                border-bottom: 2px solid #987A6E;
+                transform: rotate(40deg);
+                width: 6px;
+                height: 11px;
+                transform-origin: 100% 100%;
+                top: -4px;
+                left: -5px; }
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover #ckbox:not(:checked), #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover #ckbox:not(:checked), .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover #ckbox:not(:checked), .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover #ckbox:not(:checked), #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover #ckbox:not(:checked), .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover #ckbox:not(:checked),
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover #ckbox2:not(:checked),
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover #ckbox2:not(:checked),
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover #ckbox2:not(:checked),
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover #ckbox2:not(:checked),
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover #ckbox2:not(:checked),
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover #ckbox2:not(:checked),
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover #ckbox:checked,
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover #ckbox:checked,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover #ckbox:checked,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover #ckbox:checked,
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover #ckbox:checked,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover #ckbox:checked,
+              #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form .recover #ckbox2:checked,
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form .recover #ckbox2:checked,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form .recover #ckbox2:checked,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form .recover #ckbox2:checked,
+              #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form .recover #ckbox2:checked,
+              .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form .recover #ckbox2:checked {
+                display: none; }
+            #contacts .contacts .cont .contacts__question .contacts__question_form .contacts__form #btnForm, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .contacts__form #btnForm, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .contacts__form #btnForm, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form #contacts .contacts .cont .contacts__question .contacts__question_form .catalog__form #btnForm, #contacts .contacts .cont .contacts__question .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem .catalogMod__form .catalog__form #btnForm, .catalog__cards .catalogMod__wrap .catalogMod__container .catalogMod__container_elems .catalogMod__container_elem #contacts .contacts .cont .contacts__question .catalogMod__form .catalog__form #btnForm {
+              margin-top: 2em;
+              outline: none; }
 
-/* Эффект кнопки */
-a.button_dws {
-    background: #298cad;
-    color: #ffffff;
-    font-size: 18px;
-    text-transform: uppercase;
-    display: block;
-    text-align: center;
-    line-height: 46px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    border-bottom: 4px solid #36d2ff;
-    border-radius: .3em;
-    min-width: 200px;
-}
-
-a.button_dws:hover {
-    color: #ffffff;
-}
-
-.button_dws::before,
-.button_dws::after {
-    content: "";
-    display: block;
+footer {
+  background: #E8D4C9;
+  width: 100%;
+  height: 5.55em; }
+  footer .foo {
     width: 100%;
     height: 100%;
-    background: #27bfdc;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    transition: .3s;
-    z-index: -1;
-}
+    margin-left: 7em; }
+    footer .foo .foo__text p {
+      margin-top: 6px;
+      color: #403637;
+      font-size: 0.8em; }
+    footer .foo .foo__text a {
+      color: #403637;
+      font-size: 0.8em; }
+    footer .foo .foo__text .a {
+      border-bottom: 1px solid #CBA696; }
 
-.button_dws::after {
-    background: #36d2ff;
-    top: 100%;
-    left: 0;
-    transition-delay: .2s;
-}
+@media screen and (max-width: 1440px) {
+  body {
+    font-size: 16px; }
+    body .catalog__card {
+      width: 200px;
+      height: 380px; } }
 
-.button_dws:hover::before {
-    left: 0;
-}
-
-.button_dws:hover::after {
-    top: 0;
-}
-
-
-/* Анимация иконок */
-.social {
-    display: flex;
-    justify-content: space-between;
-    font-size: 24px;
-}
-
-.social a {
-    width: 40px;
-    height: 40px;
-    display: block;
-    line-height: 40px;
-    text-align: center;
-    position: relative;
-}
-
-.social li a::before,
-.social li a::after {
-    content: '';
-    position: absolute;
-    background: #2fbae1;
-    width: 100%;
-    height: 1px;
-    left: 0;
-    transition: transform .5s;
-    transform: scaleY(0);
-}
-
-.social li a::before {
-    transform-origin: right;
-}
-
-.social li a::after {
-    transform-origin: left;
-}
-
-.social li a:hover::before {
-    transform: scaleX(0);
-    transform-origin: left;
-}
-
-.social li a:hover::after {
-    transform: scaleX(0);
-    transform-origin: right;
-}
-
-.social li a div::before,
-.social li a div::after {
-    content: '';
-    position: absolute;
-    background: #2fbae1;
-    width: 1px;
-    height: 100%;
-    transition: transform .5s;
-    transform: scaleY(0);
-}
-
-.social li a div::before {
-    left: 0;
-    transform-origin: bottom;
-}
-
-.social li a div::after {
-    right: 0;
-    transform-origin: top;
-}
-
-.social li a:hover div::before {
-    transform: scaleY(1);
-    transform-origin: top;
-}
-
-.social li a:hover div::after {
-    transform: scaleY(1);
-    transform-origin: bottom;
-}
-
-.social+a {
-    margin-top: 10px;
-    display: block;
-    font-size: 12px;
-    text-align: center;
-}
-
-
-/* подвал */
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    height: 7em;
-    background: rgb(47, 56, 59);
-}
-
-.footer-body {
-    width: 59em;
-    margin: 0 auto;
-    padding: auto;
-    color: white;
-}
-
-.footer-body p {
-    color: rgb(130, 134, 135);
-    margin: 0;
-}
-
-.footer__item a {
-    text-decoration: none;
-    color: rgb(130, 134, 135);
-    font-size: 0.8em;
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    border-bottom-style: dotted;
-}
-
-
-
-@media screen and (max-width: 870px) {
-
-    .column {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .padding:hover {
-        padding: 0 0 0 1em;
-    }
-
-    .p__bold,
-    .img {
-        margin-right: 0.5em;
-    }
-}
-
-
-@media screen and (max-width: 450px) {
-    .container__appeal_li p {
-        margin: .5em;
-    }
-
-    .column2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media screen and (max-width: 426px) {
-
-    .container__mission,
-    .container__merit {
-        padding: 0 1em;
-        margin: 0 1em;
-    }
-
-    .container__merit p {
-        text-align: right;
-    }
-
-    .container {
-        margin-top: 40px;
-    }
-
-    .container h2 {
-        margin: 20px 0;
-    }
-
-    .container__appeal {
-        margin-top: 2em;
-    }
-
-    .m {
-        margin: 0;
-        padding: 0;
-    }
-
-    .p {
-        padding: 2em;
-    }
-
-    .container__appeal_block {
-        padding: 1em;
-    }
-
-    .h3 {
-        padding-bottom: 1em;
-        width: 40%;
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    .flex-row,
-    .flex-grow-1,
-    .f-start {
-        width: 320px;
-        margin: auto;
-        padding: auto;
-    }
-
-    .container__mission,
-    .container__merit {
-        width: 250px;
-        margin: 0;
-        padding: 0 1em 0 3em;
-
-    }
-
-    .column3 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 250px;
-        margin: 2em auto;
-    }
-
-    .column3 div,
-    .column3 p {
-        margin: 0;
-        padding: 0;
-    }
-
-    .h3 {
-        padding-bottom: 1em;
-        width: 50%;
-    }
-}
-
-
-@media screen and (max-width: 320px) {
-
-    .container__appeal_block {
-        width: 288px;
-        padding: 1em;
-        margin: 2em 0;
-    }
-
-    .container__appeal_ul {
-        width: 320px;
-    }
-
-    .container__appeal_li {
-        width: 100px;
-    }
-
-    .num {
-        padding: .8em 1.2em;
-        font-weight: normal;
-    }
-
-    .num:hover {
-        padding: 1.5em 2em;
-        box-shadow: 0 0 0 2px white, 0 0 0 4px #3A2F28;
-    }
-
-    .container__appeal_li p {
-        font-weight: normal;
-    }
-
-}
+/*# sourceMappingURL=style.css.map */
